@@ -180,8 +180,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // CONTACT FORM — Handling
   // ============================================
+  // Berichten worden via FormSubmit (formsubmit.co) naar dit adres gemaild.
+  const CONTACT_EMAIL = 'info@demassagepraktijk.nl';
+
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const submitBtnHtml = submitBtn.innerHTML;
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // Collect form data
@@ -191,31 +197,69 @@ document.addEventListener('DOMContentLoaded', () => {
         data[key] = value;
       });
 
-      console.log('Form submission:', data);
+      // Spam bot filled the hidden honeypot field
+      if (data._honey) return;
 
-      // Show success state
-      contactForm.style.display = 'none';
-      formSuccess.classList.add('active');
+      const treatmentSelect = document.getElementById('contact-treatment');
+      const treatmentLabel = treatmentSelect.value
+        ? treatmentSelect.options[treatmentSelect.selectedIndex].text
+        : '-';
 
-      // Construct mailto link as fallback
-      const subject = encodeURIComponent(`Afspraak aanvraag: ${data.treatment || 'Algemeen'}`);
-      const body = encodeURIComponent(
-        `Naam: ${data.name}\n` +
-        `Telefoon: ${data.phone || '-'}\n` +
-        `E-mail: ${data.email}\n` +
-        `Behandeling: ${data.treatment || '-'}\n\n` +
-        `Bericht:\n${data.message || '-'}`
-      );
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Bezig met versturen...';
 
-      // Open email client
-      window.location.href = `mailto:info@demassagepraktijk.nl?subject=${subject}&body=${body}`;
+      try {
+        const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            _subject: `Nieuw bericht via de website van ${data.name}`,
+            _replyto: data.email,
+            _template: 'table',
+            Naam: data.name,
+            Telefoon: data.phone || '-',
+            'E-mail': data.email,
+            Behandeling: treatmentLabel,
+            Bericht: data.message || '-'
+          })
+        });
+        const result = await response.json();
+        if (!response.ok || String(result.success) !== 'true') {
+          throw new Error(result.message || 'Versturen mislukt');
+        }
 
-      // Reset after 5 seconds
-      setTimeout(() => {
-        contactForm.reset();
-        contactForm.style.display = '';
-        formSuccess.classList.remove('active');
-      }, 5000);
+        // Show success state
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('active');
+
+        // Reset after 5 seconds
+        setTimeout(() => {
+          contactForm.reset();
+          contactForm.style.display = '';
+          formSuccess.classList.remove('active');
+        }, 5000);
+      } catch (err) {
+        console.error('Form submission failed:', err);
+        alert(`Het versturen is helaas niet gelukt. Probeer het later opnieuw, of mail direct naar ${CONTACT_EMAIL} of bel 06-54736350.`);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = submitBtnHtml;
+      }
+    });
+  }
+
+  // ============================================
+  // BOOKING LINK — Salonsoft online agenda
+  // ============================================
+  // Plak hier de boekingslink uit Salonsoft. Zolang deze leeg is,
+  // blijven de "Afspraak Maken"-knoppen naar het contactformulier gaan.
+  const BOOKING_URL = 'https://demassagepraktijkstanddaarbuiten.boekingapp.nl';
+
+  if (BOOKING_URL) {
+    document.querySelectorAll('[data-booking]').forEach((link) => {
+      link.href = BOOKING_URL;
+      link.target = '_blank';
+      link.rel = 'noopener';
     });
   }
 

@@ -32,7 +32,7 @@
         <a href="#prijzen" class="nav__link">Prijzen</a>
         <a href="#reviews" class="nav__link">Reviews</a>
         <a href="#contact" class="nav__link">Contact</a>
-        <a href="#contact" class="nav__cta">Afspraak Maken</a>
+        <a href="#contact" class="nav__cta" data-booking>Afspraak Maken</a>
       </div>
 
       <button class="nav__toggle" id="navToggle" aria-label="Menu openen">
@@ -62,7 +62,7 @@
         Waar lichaam en geest tot rust komen.
       </p>
       <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary btn--large">
+        <a href="#contact" class="btn btn--primary btn--large" data-booking>
           Afspraak Maken
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -579,6 +579,11 @@
             </div>
           </div>
 
+          <!-- "Boek nu" knop: zelfde link en stijl als "Afspraak Maken" -->
+          <div class="contact__info-item">
+            <a href="#contact" class="btn btn--primary btn--large" data-booking>Boek nu!</a>
+          </div>
+
           <div class="contact__hours">
             <h4 class="contact__hours-title">📅 Openingstijden</h4>
             <div class="contact__hours-row">
@@ -613,6 +618,8 @@
           <h3 class="contact__form-title">Stuur een Bericht</h3>
 
           <form id="contactForm">
+            <!-- Honeypot tegen spam: onzichtbaar voor bezoekers -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <div class="form-group">
                 <label for="contact-name">Naam *</label>
@@ -761,7 +768,7 @@
         <h4 class="treatment-modal__subtitle">Goed voor</h4>
         <ul class="treatment-modal__list" id="treatmentModalFor"></ul>
 
-        <a href="#contact" class="btn btn--primary treatment-modal__cta" id="treatmentModalCta">
+        <a href="#contact" class="btn btn--primary treatment-modal__cta" id="treatmentModalCta" data-booking>
           Afspraak Maken
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
