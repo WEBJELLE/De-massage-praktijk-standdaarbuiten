@@ -1,782 +1,802 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Massagepraktijk Standdaarbuiten: professionele massages door Monique Oosthoek. Sportmassage, Magnesium Experience, Hotstone, Hoofd- en gezichtsmassage, Cupping en Infrarood Pakking.">
-  <meta name="keywords" content="massagepraktijk, Standdaarbuiten, sportmassage, magnesium massage, hotstone, cupping, gezichtsmassage, infrarood pakking, Monique Oosthoek">
-  <meta name="author" content="Massagepraktijk Standdaarbuiten">
-  <meta property="og:title" content="Massagepraktijk Standdaarbuiten | Monique Oosthoek">
-  <meta property="og:description" content="Ervaar totale ontspanning bij Massagepraktijk Standdaarbuiten. Professionele behandelingen afgestemd op uw wensen.">
-  <meta property="og:type" content="website">
-  <title>Massagepraktijk Standdaarbuiten | Monique Oosthoek</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Favicon placeholder -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💆</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Massagepraktijk Standdaarbuiten | Sportmassage, hotstone en magnesium</title>
+<meta name="description" content="Massagepraktijk in Standdaarbuiten met ruim 20 jaar ervaring. Sportmassage, ontspanningsmassage, hotstone, cupping, hoofd- en gezichtsmassage en de Magnesium Experience. Plan online een afspraak.">
+<link rel="canonical" href="https://www.demassagepraktijk.nl/">
+<meta name="theme-color" content="#f4f1ed">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Massagepraktijk Standdaarbuiten">
+<meta property="og:title" content="Massagepraktijk Standdaarbuiten | Ontdek de kracht van ontspanning">
+<meta property="og:description" content="Sportmassage, hotstone, cupping en de Magnesium Experience in Standdaarbuiten. Ruim 20 jaar ervaring. Plan online een afspraak.">
+<meta property="og:url" content="https://www.demassagepraktijk.nl/">
+<meta property="og:image" content="https://www.demassagepraktijk.nl/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Massagepraktijk Standdaarbuiten",
+  "alternateName": "De Massagepraktijk",
+  "url": "https://www.demassagepraktijk.nl/",
+  "telephone": "+31654736350",
+  "email": "info@demassagepraktijk.nl",
+  "priceRange": "€38 - €105",
+  "founder": {"@type": "Person", "name": "Monique Oosthoek"},
+  "address": {"@type": "PostalAddress", "streetAddress": "Timberwolfstraat 32", "postalCode": "4758 AK", "addressLocality": "Standdaarbuiten", "addressCountry": "NL"},
+  "areaServed": ["Standdaarbuiten","Hoeven","Oudenbosch","Roosendaal","Zevenbergen","Klundert","Kruisland","Oud Gastel","Willemstad","Fijnaart","Breda"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "12:00", "closes": "15:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "15:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "12:00"}
+  ],
+  "sameAs": ["https://www.instagram.com/demassagepraktijk.nl/","https://www.facebook.com/massagepraktijkstanddaarbuiten"],
+  "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Behandelingen", "itemListElement": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sportmassage"}, "price": "55.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ontspanningsmassage"}, "price": "55.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hotstone massage"}, "price": "60.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hoofd- en gezichtsmassage"}, "price": "38.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cupping massage"}, "price": "55.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pakking met infrarooddeken"}, "price": "55.00", "priceCurrency": "EUR"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Magnesium Experience"}, "price": "105.00", "priceCurrency": "EUR"}
+  ]}
+}
+</script>
+<link rel="preload" href="fonts/quicksand-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --bg:#f4f1ed;        /* achtergrond (oude site) */
+  --bg2:#eae5dd;       /* afwisselende sectie */
+  --kaart:#fbf9f6;
+  --merk:#98887d;      /* koppen, menu, knoppen (oude site) */
+  --merk-hover:#a3958b;
+  --tekst:#7a6b62;     /* lopende tekst: iets donkerder dan #98887d voor leesbaarheid */
+  --donker:#4a413b;    /* footer */
+  --footer-link:#c7bbac;
+  --lijn:#ddd5ca;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Quicksand',system-ui,sans-serif;font-size:18px;line-height:1.65;color:var(--tekst);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--bg2)}
+h1,h2,h3{color:var(--merk);font-weight:600;line-height:1.2}
+h2{font-size:26px;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+@media(min-width:960px){h2{font-size:30px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px}
+.label{display:block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--merk-hover);margin-bottom:6px}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Quicksand',sans-serif;letter-spacing:.03em;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--tekst);border-color:var(--tekst)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--bg);border-color:var(--bg);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;text-transform:uppercase;font-size:18px;font-weight:500;letter-spacing:.04em;color:var(--merk)}
+.menu a:hover{color:var(--tekst)}
+.nav-rechts{display:flex;align-items:center;gap:10px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:var(--bg)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;color:var(--merk);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+@media(min-width:1180px){.menu a{font-size:20px}}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,680px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(52,42,36,.72) 0%,rgba(52,42,36,.5) 38%,rgba(52,42,36,0) 62%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:46px;font-weight:600;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6f1eb}
+.hero-review{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;font-style:italic;color:#f6f1eb}
+.hero-review b{display:block;font-style:normal;font-weight:600;margin-top:4px;font-size:14px;letter-spacing:.04em}
+@media(max-width:719px){
+  .hero{min-height:0;align-items:flex-end}
+  .hero>img{object-position:28% 0}
+  .hero::after{background:linear-gradient(0deg,rgba(52,42,36,.82) 0%,rgba(52,42,36,.6) 55%,rgba(52,42,36,0) 82%)}
+  .hero .wrap{padding-top:170px;padding-bottom:30px;justify-content:flex-start}
+  .hero h1{font-size:31px;margin-bottom:10px}
+  .hero p{font-size:17px;margin-bottom:20px}
+  .hero .btn{padding:14px 20px;font-size:15px}
+  .hero-review,.badges{display:none}
+}
+
+/* behandelingen (opzet zoals de eerste mockup) */
+.grid3{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:640px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:32px}}
+.kaart{position:relative;background:var(--kaart);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;box-shadow:0 1px 3px rgba(74,65,59,.06),0 10px 30px rgba(74,65,59,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 2px 6px rgba(74,65,59,.08),0 18px 40px rgba(74,65,59,.13)}
+.kaart-foto{aspect-ratio:11/8;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:26px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;font-weight:600;margin-bottom:8px}
+.kaart-body p{font-size:16px;line-height:1.65;flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:18px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:20px;color:var(--merk);font-weight:700}
+.duur{display:inline-flex;align-items:center;gap:6px;font-size:14.5px}
+.duur svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* behandeling-popup (foto links, info rechts) */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));height:auto;border-radius:20px;background:var(--kaart);color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,32,28,.35)}
+.popup::backdrop{background:rgba(52,42,36,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:38px 40px 10px}
+.pop-body h3{font-size:28px;margin-bottom:8px;padding-right:40px}
+.pop-meta{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.pop-meta strong{font-size:20px;color:var(--merk);font-weight:700}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{color:var(--merk);font-size:18px;font-weight:600;margin:20px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk-hover)}
+.pop-prijzen .rij{font-size:16px;padding:8px 0}
+.pop-voet{padding:16px 40px calc(18px + env(safe-area-inset-bottom));background:var(--kaart)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(122,107,98,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+.pop-dicht:focus{outline:none}.pop-dicht:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;height:auto;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px;display:block}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+.twijfel{margin-top:32px;background:var(--merk);color:#fff;border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:18px}
+.twijfel h3{color:#fff;margin-bottom:4px}
+.twijfel p{color:#f6f1eb}
+@media(min-width:860px){.twijfel{flex-direction:row;align-items:center;justify-content:space-between;padding:32px 40px}.twijfel>div{max-width:680px}}
+
+/* experience */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.meta span{background:var(--kaart);border:1px solid var(--lijn);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:600;color:var(--merk)}
+.stappen{list-style:none;counter-reset:s;margin-bottom:24px}
+.stappen li{counter-increment:s;position:relative;padding-left:52px;margin-bottom:16px}
+.stappen li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:16px}
+.stappen b{display:block;color:var(--merk);font-weight:600}
+.klein{font-size:15.5px}
+
+/* tarieven */
+.tarieven{display:grid;gap:22px}
+.tarieven .kolom{display:grid;gap:22px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}.tarieven .kolom{gap:28px}}
+.lijst{background:var(--kaart);border-radius:var(--r);padding:24px 24px 10px}
+.lijst h3{font-size:17px;text-transform:uppercase;letter-spacing:.06em;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;color:var(--merk);white-space:nowrap}
+.rij small{display:block;font-size:14px;opacity:.85}
+.noten{display:grid;gap:14px;margin-top:22px}
+
+.noot{border-left:3px solid var(--merk);padding:4px 0 4px 16px;font-size:15.5px}
+.noot b{display:block;color:var(--merk)}
+
+/* over mij */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.over p+p{margin-top:14px}
+.feiten{display:grid;grid-template-columns:1fr;gap:12px;margin-top:26px}
+@media(min-width:560px){.feiten{grid-template-columns:repeat(3,1fr)}}
+.feit{background:var(--kaart);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block}
+
+/* impressie */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+.galerij .groot{grid-column:1/-1}
+@media(min-width:900px){
+  .galerij{grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:16px}
+  .galerij .groot{grid-column:1;grid-row:1/3}
+  .galerij .groot img{aspect-ratio:auto}
+}
+
+/* reviews */
+.reviews{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -20px;padding:4px 20px 8px;scroll-padding:0 20px}
+.reviews::-webkit-scrollbar{display:none}
+.reviews .review{flex:0 0 84%;scroll-snap-align:start}
+@media(min-width:640px){.reviews .review{flex-basis:46%}}
+.stipjes{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.stipjes button{width:9px;height:9px;padding:0;border-radius:50%;border:0;background:var(--lijn);cursor:pointer;transition:background .2s,width .2s}
+.stipjes button.aan{background:var(--merk);width:22px;border-radius:5px}
+@media(min-width:1100px){
+  .reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;overflow:visible;margin:0;padding:0}
+  .stipjes{display:none}
+}
+.review{background:var(--kaart);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column}
+.review svg{width:30px;height:30px;color:var(--footer-link);margin-bottom:10px}
+.review p{font-size:16.5px;flex:1}
+.review cite{display:block;margin-top:16px;font-style:normal;font-weight:700;color:var(--merk);font-size:15px}
+.review cite small{display:block;font-weight:500;color:var(--tekst);opacity:.85}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.15fr 1fr 1fr;gap:28px;align-items:stretch}}
+.afspraak{background:var(--merk);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.afspraak h3{color:#fff;font-size:24px;margin-bottom:8px}
+.afspraak p{color:#f6f1eb;margin-bottom:22px}
+.afspraak .knoppen{margin-top:auto}
+.info{background:var(--kaart);border-radius:var(--r);padding:26px 24px}
+.info h3{font-size:17px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:9px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk)}
+.tijden .rij{padding:8px 0}
+.werkgebied{margin-top:24px;font-size:15px;max-width:820px}
+/* contactformulier */
+.bericht{margin-top:28px;background:var(--kaart);border-radius:18px;padding:30px 24px;display:grid;gap:22px;box-shadow:0 1px 3px rgba(74,65,59,.05),0 10px 30px rgba(74,65,59,.06)}
+@media(min-width:900px){.bericht{grid-template-columns:1fr 1.7fr;gap:48px;padding:44px 48px}}
+.bericht h3{font-size:26px;margin-bottom:8px}
+.bericht-intro p{font-size:16.5px}
+.velden{display:grid;gap:16px}
+.velden .twee{display:grid;gap:16px}
+@media(min-width:600px){.velden .twee{grid-template-columns:1fr 1fr}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--merk);margin-bottom:6px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Quicksand',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:13px 14px;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.veld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2398887d' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:40px}
+.veld textarea{min-height:130px;resize:vertical}
+.veld input::placeholder,.veld textarea::placeholder{color:#b3a89c}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(152,136,125,.18)}
+.velden .btn{width:100%;padding:16px 24px}
+.velden .btn[disabled]{opacity:.7;cursor:wait}
+.privacy-regel{font-size:14px;opacity:.9}
+.privacy-regel a{color:var(--merk)}
+.honing{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.verstuurd{display:none;text-align:center;padding:30px 10px}
+.verstuurd.aan{display:block}
+.verstuurd svg{width:48px;height:48px;color:var(--merk);margin:0 auto 12px}
+.verstuurd h3{margin-bottom:6px}
+.fout{display:none;font-size:15px;color:#a0493d}
+.fout.aan{display:block}
+
+/* footer */
+footer{background:var(--donker);color:#d8cfc5;padding:48px 0 24px;font-size:16px}
+.f-grid{display:grid;gap:30px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.3fr 1fr 1fr 1.2fr}}
+.f-logo{display:inline-block;margin-bottom:16px}
+.f-logo img{width:120px;height:120px}
+footer h4{color:#fff;font-size:15px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:12px}
+footer a{color:var(--footer-link);text-decoration:none}
+footer a:hover{color:#fff}
+.f-links a{display:block;padding:3px 0}
+.f-quote{font-style:italic;font-size:17px;line-height:1.5;color:#e9e2d9;max-width:260px}
+.insta{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(199,187,172,.25);border-radius:12px;padding:16px;transition:background .2s}
+.insta:hover{background:rgba(255,255,255,.1)}
+.insta svg{width:30px;height:30px;flex:none;color:var(--footer-link)}
+.insta b{display:block;color:#fff;font-weight:600}
+.socials{display:flex;gap:10px;margin-top:14px}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(199,187,172,.4);display:flex;align-items:center;justify-content:center}
+.socials svg{width:18px;height:18px}
+.f-onder{margin-top:36px;padding-top:18px;border-top:1px solid rgba(199,187,172,.2);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#b3a89c}
+</style>
 </head>
 <body>
 
-  <!-- ============================================
-       NAVIGATION
-       ============================================ -->
-  <nav class="nav" id="navbar">
-    <div class="container">
-      <a href="#home" class="nav__logo">
-        <img src="LOGO.webp" alt="Massagepraktijk Standdaarbuiten" class="nav__logo-img">
-      </a>
-
-      <div class="nav__links" id="navLinks">
-        <a href="#home" class="nav__link nav__link--active">Home</a>
-        <a href="#over-mij" class="nav__link">Over Mij</a>
-        <a href="#behandelingen" class="nav__link">Behandelingen</a>
-        <a href="#prijzen" class="nav__link">Prijzen</a>
-        <a href="#reviews" class="nav__link">Reviews</a>
-        <a href="#contact" class="nav__link">Contact</a>
-        <a href="https://demassagepraktijkstanddaarbuiten.boekingapp.nl" class="nav__cta" target="_blank" rel="noopener" data-booking>Afspraak Maken</a>
-      </div>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Menu openen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav__backdrop" id="navBackdrop"></div>
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Massagepraktijk Standdaarbuiten, naar boven"><img src="img/logo.webp" alt="Massagepraktijk Standdaarbuiten" width="400" height="134"></a>
+    <ul class="menu">
+      <li><a href="#behandelingen">Behandelingen</a></li>
+      <li><a href="#over-mij">Over mij</a></li>
+      <li><a href="#tarieven">Tarieven</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
     </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#over-mij">Over mij</a>
+    <a href="#tarieven">Tarieven</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <!-- ============================================
-       HERO SECTION
-       ============================================ -->
-  <section class="hero" id="home">
-    <div class="hero__bg">
-      <img src="image-high-wnvpk5.webp" alt="Monique Oosthoek - Massagepraktijk Standdaarbuiten" loading="eager">
+<main id="top">
+<section class="hero">
+  <img src="img/hero.webp" alt="Monique Oosthoek in haar massagepraktijk in Standdaarbuiten" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Ontdek de kracht van ontspanning</h1>
+      <p>Even helemaal tot rust komen. Bij Massagepraktijk Standdaarbuiten draait alles om u, met een massage die volledig op maat is.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken</a>
+        <a class="btn btn--rand" href="#behandelingen">Behandelingen</a>
+      </div>
+      <div class="hero-review">"Ik hoop dat je je handen goed verzekerd hebt want voor mij zijn ze goud waard."<b>K. van Gils</b></div>
     </div>
-    <div class="hero__overlay"></div>
-
-    <div class="hero__content">
-      <h1 class="hero__title">
-        Ontdek de kracht van <em>ontspanning</em>
-      </h1>
-      <p class="hero__subtitle">
-        Professionele massages op maat, in een warme en rustgevende omgeving.
-        Waar lichaam en geest tot rust komen.
-      </p>
-      <div class="hero__actions">
-        <a href="https://demassagepraktijkstanddaarbuiten.boekingapp.nl" class="btn btn--primary btn--large" target="_blank" rel="noopener" data-booking>
-          Afspraak Maken
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="#behandelingen" class="btn btn--outline btn--large">Bekijk Behandelingen</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       OVER MIJ / ABOUT
-       ============================================ -->
-  <section class="section about" id="over-mij">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__image-wrapper reveal-left">
-          <div class="about__image">
-            <img src="pb082940-high (1).webp" alt="Monique Oosthoek - Massagetherapeut" loading="lazy">
-          </div>
-          <div class="about__image-accent"></div>
-        </div>
-
-        <div class="about__content reveal-right">
-          <span class="section-label">Over Mij</span>
-          <h2 class="section-title">Monique Oosthoek</h2>
-          <p class="about__text">
-            Welkom bij Massagepraktijk Standdaarbuiten. Ik ben Monique Oosthoek, gediplomeerd massagetherapeut,
-            en ik help mensen graag om balans en ontspanning terug te vinden.
-          </p>
-          <p class="about__text">
-            Elk lichaam is anders, dus ik luister eerst goed naar wat u nodig heeft. Vanuit technieken
-            als sportmassage, triggerpoint, myofasciale release, shiatsu en energetische massage bouw ik
-            samen met u aan minder spanning en meer rust.
-          </p>
-          <p class="about__text">
-            In mijn praktijk creëer ik een warme, rustgevende sfeer waarin u zich helemaal kunt laten gaan,
-            want ontspanning begint bij een veilig en vertrouwd gevoel.
-          </p>
-          <p class="about__signature">Monique</p>
-
-          <div class="about__stats">
-            <div>
-              <div class="about__stat-number">6+</div>
-              <div class="about__stat-label">Behandelingen</div>
-            </div>
-            <div>
-              <div class="about__stat-number">100%</div>
-              <div class="about__stat-label">Op maat gemaakt</div>
-            </div>
-            <div>
-              <div class="about__stat-number">5★</div>
-              <div class="about__stat-label">Beoordelingen</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       BEHANDELINGEN / TREATMENTS
-       ============================================ -->
-  <section class="section section--sand" id="behandelingen">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Behandelingen</span>
-        <h2 class="section-title">Onze Massages &amp; Behandelingen</h2>
-        <p class="section-subtitle">
-          Van diepe ontspanning tot gerichte klachtenbehandeling: ontdek welke massage bij u past.
-        </p>
-      </div>
-
-      <div class="treatments__grid">
-        <!-- Sportmassage -->
-        <div class="treatment-card reveal stagger-1" data-treatment="sportmassage">
-          <div class="treatment-card__image">
-            <img src="pb082732-high.webp" alt="Sportmassage behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">(Sport)massage</h3>
-            <p class="treatment-card__desc">
-              Een krachtige massage gericht op het verlichten van spierspanning, het verbeteren van de 
-              doorbloeding en het versnellen van herstel. Ideaal bij sportblessures of chronische spanning.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">Vanaf € 55</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                45 – 75 min
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Magnesium Experience -->
-        <div class="treatment-card reveal stagger-2" data-treatment="magnesium">
-          <div class="treatment-card__image">
-            <img src="pb082876-high.webp" alt="Magnesium Experience behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">Magnesium Experience</h3>
-            <p class="treatment-card__desc">
-              Een unieke totaalervaring: magnesium voetbad, gevolgd door een ontspannende massage met 
-              magnesiumolie. Vult uw mineraalbalans aan en brengt diepe ontspanning.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">€ 105</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Complete sessie
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hotstone -->
-        <div class="treatment-card reveal stagger-3" data-treatment="hotstone">
-          <div class="treatment-card__image">
-            <img src="pb082775-high.webp" alt="Hotstone massage behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">Hotstone Massage</h3>
-            <p class="treatment-card__desc">
-              Warme basaltstenen worden strategisch op het lichaam geplaatst en gebruikt bij het masseren. 
-              De diepe warmte ontspant de spieren en bevordert de bloedcirculatie.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">€ 60</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Sessie
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hoofd en Gezichtsmassage -->
-        <div class="treatment-card reveal stagger-4" data-treatment="hoofd-gezicht">
-          <div class="treatment-card__image">
-            <img src="pb082681-high-ja1ib4.webp" alt="Hoofd en gezichtsmassage behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">Hoofd- &amp; Gezichtsmassage</h3>
-            <p class="treatment-card__desc">
-              Een heerlijk ontspannende massage van hoofd, gezicht en nek. Verlicht hoofdpijn, 
-              vermindert stress en geeft een diep gevoel van rust en verlichting.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">Vanaf € 38</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Los of combi
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cupping -->
-        <div class="treatment-card reveal stagger-5" data-treatment="cupping">
-          <div class="treatment-card__image">
-            <img src="sport-massages-16-high.webp" alt="Cupping behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">Cupping</h3>
-            <p class="treatment-card__desc">
-              Met behulp van vacuüm cups wordt de doorbloeding gestimuleerd en spanning losgemaakt. 
-              Effectief bij spierpijn, stijfheid en het bevorderen van herstel.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">Op aanvraag</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Aanvullend
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pakking (Infrarood) -->
-        <div class="treatment-card reveal stagger-6" data-treatment="pakking">
-          <div class="treatment-card__image">
-            <img src="pb082821-high.webp" alt="Infrarood pakking behandeling" loading="lazy">
-            <div class="treatment-card__image-overlay"></div>
-          </div>
-          <div class="treatment-card__content">
-            <h3 class="treatment-card__title">Pakking (Infrarood)</h3>
-            <p class="treatment-card__desc">
-              Een weldadige infrarooddeken-behandeling die het lichaam van binnenuit verwarmt. 
-              Ontgiftend, ontspannend en ideaal in combinatie met een massage.
-            </p>
-            <div class="treatment-card__meta">
-              <span class="treatment-card__price">Vanaf € 55</span>
-              <span class="treatment-card__duration">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Sessie
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SFEERBEELDEN / GALLERY
-       ============================================ -->
-  <section class="section" id="sfeer">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Impressie</span>
-        <h2 class="section-title">Een Kijkje in de Praktijk</h2>
-      </div>
-
-      <div class="gallery__grid reveal">
-        <div class="gallery__item gallery__item--large">
-          <img src="pb082729-high-v1a87q.webp" alt="Monique aan het werk" loading="lazy">
-          <div class="gallery__item-overlay"></div>
-        </div>
-        <div class="gallery__item">
-          <img src="image-high-gcujyw.webp" alt="Hotstone massage" loading="lazy">
-          <div class="gallery__item-overlay"></div>
-        </div>
-        <div class="gallery__item">
-          <img src="pb082862-high.webp" alt="Magnesium voetbad" loading="lazy">
-          <div class="gallery__item-overlay"></div>
-        </div>
-        <div class="gallery__item">
-          <img src="pb082743-high.webp" alt="Rugmassage" loading="lazy">
-          <div class="gallery__item-overlay"></div>
-        </div>
-        <div class="gallery__item">
-          <img src="pb082698b-2-high.webp" alt="Hoofdmassage" loading="lazy">
-          <div class="gallery__item-overlay"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       PRIJZEN / PRICING
-       ============================================ -->
-  <section class="section section--cream" id="prijzen">
-    <div class="container container--narrow">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Tarieven</span>
-        <h2 class="section-title">Prijsoverzicht</h2>
-        <p class="section-subtitle">Transparante tarieven voor al onze behandelingen</p>
-      </div>
-
-      <div class="pricing__grid reveal">
-        <!-- (Sport)massage -->
-        <div class="pricing__table-wrapper">
-          <div class="pricing__category">
-            <h3 class="pricing__category-title">(Sport)massage</h3>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">(Sport)massage</span>
-              <span class="pricing__treatment-duration">45 minuten</span>
-            </div>
-            <span class="pricing__price">€ 55,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">(Sport)massage</span>
-              <span class="pricing__treatment-duration">60 minuten</span>
-            </div>
-            <span class="pricing__price">€ 70,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">(Sport)massage</span>
-              <span class="pricing__treatment-duration">75 minuten</span>
-            </div>
-            <span class="pricing__price">€ 85,00</span>
-          </div>
-        </div>
-
-        <!-- Magnesium -->
-        <div class="pricing__table-wrapper">
-          <div class="pricing__category">
-            <h3 class="pricing__category-title">Magnesium Behandelingen</h3>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Magnesium massage</span>
-              <span class="pricing__treatment-duration">45 minuten</span>
-            </div>
-            <span class="pricing__price">€ 58,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Magnesium massage</span>
-              <span class="pricing__treatment-duration">60 minuten</span>
-            </div>
-            <span class="pricing__price">€ 73,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Magnesium Experience</span>
-              <span class="pricing__treatment-duration">Complete sessie</span>
-            </div>
-            <span class="pricing__price">€ 105,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Magnesium pakking</span>
-              <span class="pricing__treatment-duration">met infrarooddeken</span>
-            </div>
-            <span class="pricing__price">€ 60,00</span>
-          </div>
-        </div>
-
-        <!-- Overige Behandelingen -->
-        <div class="pricing__table-wrapper">
-          <div class="pricing__category">
-            <h3 class="pricing__category-title">Overige Behandelingen</h3>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Massage + Hoofd- en gezichtsmassage</span>
-              <span class="pricing__treatment-duration">60 minuten</span>
-            </div>
-            <span class="pricing__price">€ 70,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Massage + Hoofd- en gezichtsmassage</span>
-              <span class="pricing__treatment-duration">75 minuten</span>
-            </div>
-            <span class="pricing__price">€ 85,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Hoofd- en gezichtsmassage</span>
-              <span class="pricing__treatment-duration">los</span>
-            </div>
-            <span class="pricing__price">€ 38,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Hotstone massage</span>
-              <span class="pricing__treatment-duration">sessie</span>
-            </div>
-            <span class="pricing__price">€ 60,00</span>
-          </div>
-          <div class="pricing__row">
-            <div>
-              <span class="pricing__treatment">Pakking</span>
-              <span class="pricing__treatment-duration">met infrarooddeken</span>
-            </div>
-            <span class="pricing__price">€ 55,00</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Annuleringsbeleid -->
-      <div class="notice reveal">
-        <div class="notice__icon">📋</div>
-        <div>
-          <div class="notice__title">Annuleringsbeleid</div>
-          <p class="notice__text">
-            Afspraken kunnen tot 24 uur van tevoren kosteloos worden geannuleerd. 
-            Bij annulering binnen 24 uur wordt de volledige prijs van de behandeling in rekening gebracht.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       REVIEWS
-       ============================================ -->
-  <section class="section" id="reviews">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Ervaringen</span>
-        <h2 class="section-title">Wat Klanten Zeggen</h2>
-        <p class="section-subtitle">Lees de ervaringen van tevreden klanten</p>
-      </div>
-
-      <div class="reviews__slider" id="reviewsSlider">
-        <div class="review-card">
-          <div class="review-card__quote">"</div>
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">
-            Wat een heerlijke massage! Monique heeft precies de juiste druk en weet precies waar de spanning zit. 
-            De sfeer in de praktijk is zo warm en uitnodigend. Ik kom zeker terug!
-          </p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">A</div>
-            <div>
-              <div class="review-card__name">Anneke V.</div>
-              <div class="review-card__date">Sportmassage</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-card__quote">"</div>
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">
-            De Magnesium Experience was fantastisch! Van het voetbad tot de massage, alles was perfect.
-            Ik voelde me daarna zo ontspannen en opgeladen. Een aanrader voor iedereen.
-          </p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">M</div>
-            <div>
-              <div class="review-card__name">Marieke D.</div>
-              <div class="review-card__date">Magnesium Experience</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-card__quote">"</div>
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">
-            Na weken last van mijn nek en schouders heeft Monique mij echt geholpen. Ze combineert 
-            verschillende technieken heel vakkundig. De hotstone massage was hemels!
-          </p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">J</div>
-            <div>
-              <div class="review-card__name">Jolanda K.</div>
-              <div class="review-card__date">Hotstone Massage</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-card__quote">"</div>
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">
-            De hoofd- en gezichtsmassage was precies wat ik nodig had. Ik had al dagen hoofdpijn en 
-            na de behandeling was het helemaal weg. Monique is een topper!
-          </p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">S</div>
-            <div>
-              <div class="review-card__name">Sandra B.</div>
-              <div class="review-card__date">Hoofd- & gezichtsmassage</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-card__quote">"</div>
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">
-            Ik kom hier regelmatig voor een sportmassage en ben elke keer weer onder de indruk. 
-            De praktijk straalt rust uit en Monique is heel professioneel en vriendelijk.
-          </p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">P</div>
-            <div>
-              <div class="review-card__name">Peter H.</div>
-              <div class="review-card__date">Sportmassage</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="reviews__controls">
-        <button class="reviews__btn" id="reviewPrev" aria-label="Vorige review">←</button>
-        <button class="reviews__btn" id="reviewNext" aria-label="Volgende review">→</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       CONTACT
-       ============================================ -->
-  <section class="section section--sand" id="contact">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Maak een Afspraak</h2>
-        <p class="section-subtitle">Neem contact op of vul het formulier in, ik reageer zo snel mogelijk</p>
-      </div>
-
-      <div class="contact__grid">
-        <!-- Contact Info -->
-        <div class="contact__info reveal-left">
-          <div class="contact__info-item">
-            <div class="contact__info-icon">📍</div>
-            <div>
-              <div class="contact__info-label">Adres</div>
-              <div class="contact__info-value">Standdaarbuiten</div>
-            </div>
-          </div>
-
-          <div class="contact__info-item">
-            <div class="contact__info-icon">📞</div>
-            <div>
-              <div class="contact__info-label">Telefoon</div>
-              <div class="contact__info-value">
-                <a href="tel:0654736350">06-54736350</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact__info-item">
-            <div class="contact__info-icon">✉️</div>
-            <div>
-              <div class="contact__info-label">E-mail</div>
-              <div class="contact__info-value">
-                <a href="mailto:info@demassagepraktijk.nl">info@demassagepraktijk.nl</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- "Boek nu" knop: zelfde link en stijl als "Afspraak Maken" -->
-          <div class="contact__info-item">
-            <a href="https://demassagepraktijkstanddaarbuiten.boekingapp.nl" class="btn btn--primary btn--large" target="_blank" rel="noopener" data-booking>Boek nu!</a>
-          </div>
-
-          <div class="contact__hours">
-            <h4 class="contact__hours-title">📅 Openingstijden</h4>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Maandag</span>
-              <span class="contact__hours-time">12:00 – 15:30</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Dinsdag</span>
-              <span class="contact__hours-time">09:00 – 15:30</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Woensdag</span>
-              <span class="contact__hours-time">09:00 – 15:30</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Donderdag</span>
-              <span class="contact__hours-time">09:00 – 15:30</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Vrijdag</span>
-              <span class="contact__hours-time">09:00 – 12:00</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Weekend</span>
-              <span class="contact__hours-time">Gesloten</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact__form-wrapper reveal-right">
-          <h3 class="contact__form-title">Stuur een Bericht</h3>
-
-          <form id="contactForm">
-            <!-- Honeypot tegen spam: onzichtbaar voor bezoekers -->
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-name">Naam *</label>
-                <input type="text" id="contact-name" name="name" placeholder="Uw naam" required>
-              </div>
-              <div class="form-group">
-                <label for="contact-phone">Telefoon</label>
-                <input type="tel" id="contact-phone" name="phone" placeholder="Uw telefoonnummer">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-email">E-mailadres *</label>
-              <input type="email" id="contact-email" name="email" placeholder="Uw e-mailadres" required>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-treatment">Gewenste Behandeling</label>
-              <select id="contact-treatment" name="treatment">
-                <option value="">Selecteer een behandeling...</option>
-                <option value="sportmassage-45">(Sport)massage · 45 min · € 55</option>
-                <option value="sportmassage-60">(Sport)massage · 60 min · € 70</option>
-                <option value="sportmassage-75">(Sport)massage · 75 min · € 85</option>
-                <option value="magnesium-45">Magnesium massage · 45 min · € 58</option>
-                <option value="magnesium-60">Magnesium massage · 60 min · € 73</option>
-                <option value="magnesium-experience">Magnesium Experience · € 105</option>
-                <option value="hoofd-gezicht-60">Massage + Hoofd- en gezichtsmassage · 60 min · € 70</option>
-                <option value="hoofd-gezicht-75">Massage + Hoofd- en gezichtsmassage · 75 min · € 85</option>
-                <option value="hoofd-gezicht-los">Hoofd- en gezichtsmassage (los) · € 38</option>
-                <option value="hotstone">Hotstone massage · € 60</option>
-                <option value="magnesium-pakking">Magnesium pakking (infrarood) · € 60</option>
-                <option value="pakking">Pakking (infrarood) · € 55</option>
-                <option value="anders">Anders / Weet ik nog niet</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">Bericht</label>
-              <textarea id="contact-message" name="message" placeholder="Vertel iets over uw wensen of klachten..."></textarea>
-            </div>
-
-            <div class="form-submit">
-              <button type="submit" class="btn btn--primary btn--large">
-                Versturen
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-            </div>
-          </form>
-
-          <div class="form-success" id="formSuccess">
-            <div class="form-success__icon">✅</div>
-            <h3 class="form-success__title">Bedankt voor uw bericht!</h3>
-            <p class="form-success__text">Ik neem zo snel mogelijk contact met u op.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__brand-name">Massagepraktijk <span>Standdaarbuiten</span></div>
-          <p class="footer__brand-desc">
-            Professionele massages op maat door Monique Oosthoek. 
-            Ontspan, herstel en geniet in een warme, rustgevende omgeving.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer__title">Navigatie</h4>
-          <a href="#home" class="footer__link">Home</a>
-          <a href="#over-mij" class="footer__link">Over Mij</a>
-          <a href="#behandelingen" class="footer__link">Behandelingen</a>
-          <a href="#prijzen" class="footer__link">Prijzen</a>
-          <a href="#contact" class="footer__link">Contact</a>
-        </div>
-
-        <div>
-          <h4 class="footer__title">Behandelingen</h4>
-          <a href="#behandelingen" class="footer__link">(Sport)massage</a>
-          <a href="#behandelingen" class="footer__link">Magnesium Experience</a>
-          <a href="#behandelingen" class="footer__link">Hotstone Massage</a>
-          <a href="#behandelingen" class="footer__link">Hoofd- & Gezichtsmassage</a>
-          <a href="#behandelingen" class="footer__link">Cupping</a>
-          <a href="#behandelingen" class="footer__link">Pakking (Infrarood)</a>
-        </div>
-
-        <div>
-          <h4 class="footer__title">Contact</h4>
-          <a href="tel:0654736350" class="footer__link">06-54736350</a>
-          <a href="mailto:info@demassagepraktijk.nl" class="footer__link">info@demassagepraktijk.nl</a>
-          <span class="footer__link">Standdaarbuiten</span>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copyright">
-          © 2024 Massagepraktijk Standdaarbuiten | Monique Oosthoek. Alle rechten voorbehouden.
-        </p>
-        <div class="footer__social">
-          <a href="https://www.facebook.com/demassagepraktijk" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/demassagepraktijk" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ============================================
-       LIGHTBOX
-       ============================================ -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Sluiten">✕</button>
-    <img class="lightbox__img" id="lightboxImg" src="" alt="Vergrote afbeelding">
   </div>
+</section>
 
-  <!-- ============================================
-       TREATMENT DETAIL MODAL
-       ============================================ -->
-  <div class="treatment-modal" id="treatmentModal">
-    <div class="treatment-modal__backdrop" id="treatmentModalBackdrop"></div>
-    <div class="treatment-modal__panel">
-      <button class="treatment-modal__close" id="treatmentModalClose" aria-label="Sluiten">✕</button>
-      <div class="treatment-modal__image">
-        <img id="treatmentModalImg" src="" alt="">
-      </div>
-      <div class="treatment-modal__content">
-        <h3 class="treatment-modal__title" id="treatmentModalTitle"></h3>
-        <div class="treatment-modal__meta">
-          <span class="treatment-modal__price" id="treatmentModalPrice"></span>
-          <span class="treatment-modal__duration" id="treatmentModalDuration"></span>
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Massages en behandelingen</h2>
+      <p>Tijdens een behandeling voel en zie ik vaak wat op dat moment aandacht vraagt. In overleg passen we de behandeling dan aan.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart" data-beh="sport">
+        <div class="kaart-foto"><img src="img/sport.webp" alt="Sportmassage van rug en schouders" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>(Sport)massage</h3>
+          <p>Een stevige massage die echt de diepte in gaat, voor als uw nek, schouders of rug vastzitten. Ik voel waar de spanning zit en werk die met aandacht los, zodat uw spieren weer soepel worden en u met een licht en ontspannen gevoel naar huis gaat.</p>
+          <div class="prijs"><strong>Vanaf € 55</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 45 – 75 min</span></div>
         </div>
-        <p class="treatment-modal__desc" id="treatmentModalDesc"></p>
+        <button class="meer" type="button"><span class="sr">Meer informatie over (Sport)massage</span></button>
+      </article>
+      <article class="kaart" data-beh="magnesium">
+        <div class="kaart-foto"><img src="img/experience.webp" alt="Magnesium voetenbad tijdens de Magnesium Experience" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Magnesium Experience</h3>
+          <p>Twee uur helemaal voor uzelf. U begint met uw voeten in een warm magnesiumbad en een kopje thee, daarna volgen een ontspannende massage met magnesium en een pakking onder de warme infrarooddeken, waarna u opgeladen en vol energie naar huis gaat.</p>
+          <div class="prijs"><strong>€ 105</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 120 min</span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Magnesium Experience</span></button>
+      </article>
+      <article class="kaart" data-beh="hotstone">
+        <div class="kaart-foto"><img src="img/hotstone.webp" alt="Hotstone massage met warme stenen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Hotstone massage</h3>
+          <p>De warmte van de stenen zakt langzaam diep in uw spieren, waardoor zelfs stijve en stramme plekken zich ontspannen. Samen met de massage van mijn handen is het een weldaad voor lichaam en geest, voor als u even helemaal wilt loslaten.</p>
+          <div class="prijs"><strong>€ 60</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 45 min</span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Hotstone massage</span></button>
+      </article>
+      <article class="kaart" data-beh="hoofd">
+        <div class="kaart-foto"><img src="img/hoofd.webp" alt="Hoofd- en gezichtsmassage" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Hoofd- en gezichtsmassage</h3>
+          <p>Spanning en stress nestelen zich vaak in hoofd, gezicht, nek en schouders. Met zachte bewegingen en drukpunten laat ik die spanning wegvloeien, wat verlichting kan geven bij hoofdpijn en u een heerlijk rustig hoofd geeft.</p>
+          <div class="prijs"><strong>Vanaf € 38</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Los of combi</span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Hoofd- en gezichtsmassage</span></button>
+      </article>
+      <article class="kaart" data-beh="cupping">
+        <div class="kaart-foto"><img src="img/cupping.webp" alt="Cupping massage met cup op de rug" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Cupping</h3>
+          <p>Met zachte cups til ik de huid en het weefsel eronder voorzichtig op en beweeg ik ze langzaam over uw lichaam. Zo komt de doorbloeding op gang, laat vastzittende spanning los en werkt de massage dieper door dan u gewend bent.</p>
+          <div class="prijs"><strong>€ 55</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 45 min</span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Cupping</span></button>
+      </article>
+      <article class="kaart" data-beh="pakking">
+        <div class="kaart-foto"><img src="img/pakking.webp" alt="Pakking met infrarooddeken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Pakking (infrarood)</h3>
+          <p>Onder de warme infrarooddeken, met een (magnesium)pakking op uw huid, wordt uw lichaam van binnenuit verwarmd. Uw spieren worden soepel, uw hoofd komt tot rust en vaak merkt u het die nacht nog aan een diepe, goede slaap.</p>
+          <div class="prijs"><strong>Vanaf € 55</strong><span class="duur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Los of combi</span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Pakking (infrarood)</span></button>
+      </article>
+    </div>
 
-        <h4 class="treatment-modal__subtitle">Voordelen</h4>
-        <ul class="treatment-modal__list" id="treatmentModalBenefits"></ul>
+    <div class="twijfel">
+      <div>
+        <h3>Weet u niet welke massage bij u past?</h3>
+        <p>Dan adviseer ik een sportmassage van 45 minuten. Tijdens de afspraak kijken we samen welke massagetechnieken we toepassen.</p>
+      </div>
+      <a class="btn btn--licht" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken</a>
+    </div>
+  </div>
+</section>
 
-        <h4 class="treatment-modal__subtitle">Goed voor</h4>
-        <ul class="treatment-modal__list" id="treatmentModalFor"></ul>
-
-        <a href="https://demassagepraktijkstanddaarbuiten.boekingapp.nl" class="btn btn--primary treatment-modal__cta" id="treatmentModalCta" target="_blank" rel="noopener" data-booking>
-          Afspraak Maken
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+<section class="alt" id="magnesium">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/magnesium.webp" alt="Magnesium voetenbad tijdens de Magnesium Experience" loading="lazy"></div>
+    <div>
+      <h2>Magnesium Experience</h2>
+      <div class="meta"><span>3 behandelingen in 1</span><span>120 minuten</span><span>€ 105</span></div>
+      <ol class="stappen">
+        <li><b>Voetenbad</b>U begint met uw voeten in een warm voetenbad van 37 graden met zuivere magnesiumkristallen, terwijl u geniet van een kopje thee en rustige muziek.</li>
+        <li><b>Magnesium massage</b>Daarna masseer ik u met magnesium, wat uw spieren extra laat ontspannen en helpt bij een beter herstel.</li>
+        <li><b>Lichaamspakking</b>Tot slot ligt u heerlijk warm onder de infrarooddeken met een magnesium pakking, terwijl een masker van magnesium en aloë vera uw gezicht verzorgt.</li>
+      </ol>
+      <p class="klein">Ik werk met pure magnesium van Permsal, afkomstig uit Nederland. U gaat helemaal opgeladen en vol energie naar huis.</p>
+      <div class="knoppen" style="margin-top:22px">
+        <a class="btn" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken</a>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
+<section id="over-mij">
+  <div class="wrap duo over">
+    <div class="over-foto"><img src="img/monique.webp" alt="Monique Oosthoek geeft een hoofdmassage" loading="lazy"></div>
+    <div>
+      <h2>Even voorstellen</h2>
+      <p style="margin-top:14px">Ik ben Monique Oosthoek en woon bijna mijn hele leven in Standdaarbuiten. Na een wereldreis in 2000 volgde ik de cursus sportmassage. Ik was meteen verkocht: naast sport werd masseren mijn tweede passie.</p>
+      <p>Ik pas zelden maar één techniek toe. Ik kijk naar uw klachten en gebruik de mix van technieken die daarbij helpt, van sportmassage en triggerpoint tot neural reset, myofascial en shiatsu.</p>
+      <p>Ik ben pas tevreden als u met een goed gevoel en helemaal ontspannen de deur uitgaat.</p>
+      <div class="feiten">
+        <div class="feit"><b>Ruim 20 jaar</b><span>ervaring als masseur</span></div>
+        <div class="feit"><b>Breed opgeleid</b><span>technieken afgestemd op uw klacht</span></div>
+        <div class="feit"><b>Eerlijk advies</b><span>ook als massage niet de oplossing is</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="impressie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in de praktijk</h2>
+    </div>
+    <div class="galerij">
+      <div class="groot"><img src="img/praktijk.webp" alt="De behandelruimte van Massagepraktijk Standdaarbuiten" loading="lazy"></div>
+      <img src="img/behandeling.webp" alt="Behandeling onder de infrarooddeken" loading="lazy">
+      <img src="img/stenen.webp" alt="Warme stenen tijdens een hotstone massage" loading="lazy">
+      <img src="img/kuit.webp" alt="Massage van de kuiten" loading="lazy">
+      <img src="img/pakking2.webp" alt="Monique tijdens een pakking met infrarooddeken" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="tarieven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Prijzen</h2>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>Massages</h3>
+        <div class="rij"><span>(Sport)massage<small>45 minuten</small></span><span>€ 55,00</span></div>
+        <div class="rij"><span>(Sport)massage<small>60 minuten</small></span><span>€ 70,00</span></div>
+        <div class="rij"><span>(Sport)massage<small>75 minuten</small></span><span>€ 85,00</span></div>
+        <div class="rij"><span>Massage + hoofd- en gezichtsmassage<small>60 minuten</small></span><span>€ 70,00</span></div>
+        <div class="rij"><span>Massage + hoofd- en gezichtsmassage<small>75 minuten</small></span><span>€ 85,00</span></div>
+        <div class="rij"><span>Hoofd- en gezichtsmassage<small>30 minuten</small></span><span>€ 38,00</span></div>
+        <div class="rij"><span>Hotstone massage<small>45 minuten</small></span><span>€ 60,00</span></div>
+        <div class="rij"><span>Cupping massage<small>45 minuten</small></span><span>€ 55,00</span></div>
+      </div>
+      <div class="kolom">
+      <div class="lijst">
+        <h3>Magnesium</h3>
+        <div class="rij"><span>Magnesium Experience<small>120 minuten</small></span><span>€ 105,00</span></div>
+        <div class="rij"><span>Magnesium massage<small>45 minuten</small></span><span>€ 58,00</span></div>
+        <div class="rij"><span>Magnesium massage<small>60 minuten</small></span><span>€ 73,00</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Pakkingen</h3>
+        <div class="rij"><span>Magnesium pakking<small>met infrarooddeken</small></span><span>€ 60,00</span></div>
+        <div class="rij"><span>Pakking<small>met infrarooddeken</small></span><span>€ 55,00</span></div>
+      </div>
+      </div>
+    </div>
+    <div class="noten">
+      <p class="noot"><b>Annuleren</b>Annuleren kan kosteloos tot 24 uur van tevoren. Annuleert u binnen 24 uur, dan wordt de gehele behandeling in rekening gebracht.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="reviews" id="reviewsRij">
+      <blockquote class="review">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 6C6.5 7.3 4.5 10 4.5 13.6V18h6v-6H7.6c.2-2 1.4-3.5 3.2-4.4L9.6 6zm9 0c-3.1 1.3-5.1 4-5.1 7.6V18h6v-6h-2.9c.2-2 1.4-3.5 3.2-4.4L18.6 6z"/></svg>
+        <p>"Ik hoop dat je je handen goed verzekerd hebt want voor mij zijn ze goud waard. Het resultaat is echt super. Heb me in tijden niet zo goed gevoeld."</p>
+        <cite>K. van Gils</cite>
+      </blockquote>
+      <blockquote class="review">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 6C6.5 7.3 4.5 10 4.5 13.6V18h6v-6H7.6c.2-2 1.4-3.5 3.2-4.4L9.6 6zm9 0c-3.1 1.3-5.1 4-5.1 7.6V18h6v-6h-2.9c.2-2 1.4-3.5 3.2-4.4L18.6 6z"/></svg>
+        <p>"Sinds de magnesium massages en het dagelijks gebruik van magnesium heb ik 's nachts geen kramp meer in mijn kuiten. Dank je wel Monique!"</p>
+        <cite>J. de Boer</cite>
+      </blockquote>
+      <blockquote class="review">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 6C6.5 7.3 4.5 10 4.5 13.6V18h6v-6H7.6c.2-2 1.4-3.5 3.2-4.4L9.6 6zm9 0c-3.1 1.3-5.1 4-5.1 7.6V18h6v-6h-2.9c.2-2 1.4-3.5 3.2-4.4L18.6 6z"/></svg>
+        <p>"De magnesium experience is echt een geweldige behandeling! Ik voelde me zo heerlijk erna, vol energie, alles voelde goed! Nogmaals hartelijk dank."</p>
+        <cite>K. van de Broek</cite>
+      </blockquote>
+      <blockquote class="review">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 6C6.5 7.3 4.5 10 4.5 13.6V18h6v-6H7.6c.2-2 1.4-3.5 3.2-4.4L9.6 6zm9 0c-3.1 1.3-5.1 4-5.1 7.6V18h6v-6h-2.9c.2-2 1.4-3.5 3.2-4.4L18.6 6z"/></svg>
+        <p>"Door jouw hoofd- en gezichtsmassage heb ik nu al 3 dagen geen hoofdpijn meer! De massage zelf was heel fijn. Ik voelde direct al veel verlichting, alsof mijn hoofd echt lichter voelde."</p>
+        <cite>Klant<small>Hoofd- en gezichtsmassage</small></cite>
+      </blockquote>
+    </div>
+    <div class="stipjes" id="stipjes" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+    </div>
+    <div class="contact">
+      <div class="afspraak">
+        <h3>Plan direct online</h3>
+        <p>Kies zelf een behandeling en een tijd die u uitkomt. Liever eerst even overleggen? Bel of app gerust.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken</a>
+          <a class="btn btn--rand" href="https://api.whatsapp.com/send?phone=31654736350" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="info tijden">
+        <h3>Openingstijden</h3>
+        <div class="rij"><span>Maandag</span><span>12.00 - 15.30</span></div>
+        <div class="rij"><span>Dinsdag</span><span>09.00 - 15.30</span></div>
+        <div class="rij"><span>Woensdag</span><span>09.00 - 15.30</span></div>
+        <div class="rij"><span>Donderdag</span><span>09.00 - 15.30</span></div>
+        <div class="rij"><span>Vrijdag</span><span>09.00 - 12.00</span></div>
+        <div class="rij"><span>Weekend</span><span>gesloten</span></div>
+      </div>
+      <div class="info">
+        <h3>Gegevens</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Timberwolfstraat+32+4758+AK+Standdaarbuiten" target="_blank" rel="noopener">Timberwolfstraat 32<br>4758 AK Standdaarbuiten</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31654736350">06 54 73 63 50</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@demassagepraktijk.nl">info@demassagepraktijk.nl</a></div>
+      </div>
+    </div>
+
+    <div class="bericht" id="bericht">
+      <div class="bericht-intro">
+        <h3>Stuur een bericht</h3>
+        <p>Heeft u een vraag of wilt u eerst overleggen welke behandeling bij u past? Laat een bericht achter, dan neem ik zo snel mogelijk contact met u op.</p>
+      </div>
+      <div>
+        <form class="velden" id="contactForm" novalidate>
+          <input class="honing" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam *</label><input id="f-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" inputmode="tel" autocomplete="tel" placeholder="Uw telefoonnummer"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres *</label><input id="f-mail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Uw e-mailadres" required></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Vertel iets over uw wensen of klachten..."></textarea></div>
+          <p class="fout" id="formFout" role="alert"></p>
+          <button class="btn" type="submit">Versturen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+          <p class="privacy-regel">Uw gegevens worden alleen gebruikt om op uw bericht te reageren. Lees meer in de <a href="https://www.demassagepraktijk.nl/privacy.html">privacyverklaring</a>.</p>
+        </form>
+        <div class="verstuurd" id="formKlaar" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <h3>Bedankt voor uw bericht!</h3>
+          <p>Ik neem zo snel mogelijk contact met u op.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="werkgebied">Klanten komen onder andere uit Standdaarbuiten, Hoeven, Oudenbosch, Roosendaal, Zevenbergen, Klundert, Kruisland, Oud Gastel, Willemstad, Fijnaart en Breda.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="f-logo"><img src="img/logo-rond.webp" alt="Massagepraktijk Standdaarbuiten" width="320" height="320"></a>
+        <p class="f-quote">"Sometimes the most productive thing you can do is relax."</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#behandelingen">Behandelingen</a>
+        <a href="#magnesium">Magnesium Experience</a>
+        <a href="#over-mij">Over mij</a>
+        <a href="#tarieven">Tarieven</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31654736350">06 54 73 63 50</a>
+        <a href="mailto:info@demassagepraktijk.nl">info@demassagepraktijk.nl</a>
+        <span>Timberwolfstraat 32<br>4758 AK Standdaarbuiten</span>
+      </div>
+      <div>
+        <h4>Volg de praktijk</h4>
+        <a class="insta" href="https://www.instagram.com/demassagepraktijk.nl/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <span><b>Instagram</b>@demassagepraktijk.nl</span>
+        </a>
+        <div class="socials">
+          <a href="https://www.facebook.com/massagepraktijkstanddaarbuiten" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.1L14.1 2C10.9 2 10.2 4.4 10.2 6v2.5H8V12h2.2v10H14V12h2.7l.4-3.5H14z"/></svg></a>
+          <a href="https://www.instagram.com/demassagepraktijk.nl/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="https://api.whatsapp.com/send?phone=31654736350" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4l-4.5 1.1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8c-1-.4-2.3-1.7-2.7-2.7l.8-1-1-2L9 8.5z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="f-onder">
+      <span>© 2026 Massagepraktijk Standdaarbuiten</span>
+      <a href="https://www.demassagepraktijk.nl/privacy.html">Privacyverklaring</a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-meta"><strong id="popPrijs"></strong><span class="duur" id="popDuur"></span></div>
+          <div id="popTekst"></div>
+          <h4>Voordelen</h4>
+          <ul class="pop-lijst" id="popVoordelen"></ul>
+          <div class="pop-prijzen" id="popPrijzen" hidden><h4>Prijzen</h4><div></div></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://DeMassagepraktijkStanddaarbuiten.boekingapp.nl?cid=16790&amp;CategoryId=nvt" target="_blank" rel="noopener" data-boek>Afspraak maken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Behandeling-popup: teksten en voordelen komen van de behandelpagina's op demassagepraktijk.nl
+  const BEH = {
+    sport: {
+      titel: '(Sport)massage', prijs: 'Vanaf € 55', duur: '45 – 75 min',
+      tekst: ['Een sportmassage is niet altijd even fijn, dat hoor ik regelmatig. Maar het geeft wel verlichting, en vaak zeggen klanten achteraf: "Was ik maar eerder gekomen."',
+              'Tijdens de massage werk ik stevig en gericht op uw spieren. Daardoor komt de doorbloeding op gang en worden afvalstoffen sneller afgevoerd, zodat blessures beter herstellen en uw spieren minder gespannen aanvoelen. Juist als uw nek, schouders of rug vastzitten, merkt u hoe fijn het is als die spanning eindelijk loslaat, dus zeker niet alleen als u sport.',
+              'Heeft u meer behoefte aan rust? Dan kies ik voor een zachte, rustige ontspanningsmassage, waarbij gespannen spieren net zo goed worden losgemasseerd, maar u vooral ook in uw hoofd helemaal tot rust komt.'],
+      voordelen: ['Bevordert de doorbloeding', 'Voert afvalstoffen af', 'Maakt de spieren los', 'Verbetert de nachtrust', 'Verlicht stress', 'Te combineren met hoofd- en gezichtsmassage'],
+      prijzen: [['45 minuten', '€ 55,00'], ['60 minuten', '€ 70,00'], ['75 minuten', '€ 85,00']]
+    },
+    magnesium: {
+      titel: 'Magnesium Experience', prijs: '€ 105', duur: '120 min',
+      tekst: ['Deze behandeling is echt een moment voor uzelf: drie behandelingen in één, die u diep laten ontspannen en u tegelijk weer helemaal opladen.',
+              'U begint met uw voeten in een warm voetenbad van 37 graden met zuivere Permsal magnesiumkristallen, terwijl u geniet van een kopje thee en rustige muziek. Daarna masseer ik u met magnesium, wat zorgt voor extra ontspanning van uw spieren en een beter herstel.',
+              'Tot slot volgt een magnesium lichaamspakking onder de warme infrarooddeken, terwijl u geniet van een gezichtsmasker met magnesium en aloë vera. Met warme handdoeken haal ik het overtollige magnesium weg, en daarna gaat u helemaal opgeladen en vol energie naar huis.'],
+      voordelen: ['3 behandelingen in 1', 'Ontspant lichaam en geest', 'Geeft energie', 'Versterkt het immuunsysteem', 'Helpt voor een betere nachtrust', 'Inclusief magnesium gezichtsmasker']
+    },
+    hotstone: {
+      titel: 'Hotstone massage', prijs: '€ 60', duur: '45 min',
+      tekst: ['Bij een hotstone massage werk ik met warme stenen en mijn handen tegelijk. De stenen zijn zo\'n 50 graden, en die warmte zakt langzaam diep in uw spieren, waardoor ze direct ontspannen en de massage meteen effect heeft op stijve, stramme plekken.',
+              'Ik leg de stenen ook op knopen of plekken die extra aandacht vragen, zodat de spier daar rustig kan loslaten. Het gewicht en de warmte van de stenen maken het een heerlijke aanvulling op een gewone massage, en een echte weldaad voor lichaam en geest.'],
+      voordelen: ['Warme stenen van 50 graden', 'Ontspant de spieren', 'Verlicht stress', 'Verhoogt de energie', 'Helpt voor een betere nachtrust', 'Te combineren met hoofd- en gezichtsmassage']
+    },
+    hoofd: {
+      titel: 'Hoofd- en gezichtsmassage', prijs: 'Vanaf € 38', duur: '30 min',
+      tekst: ['Als u gestrest bent of veel aan uw hoofd heeft, hoopt de spanning zich vaak op in uw hoofd, gezicht, nek en schouders. Dat kan zich uiten in hoofdpijn of een stram gevoel dat maar niet weggaat.',
+              'Met zachte massagebewegingen en drukpunten help ik die blokkades los te laten, wat verlichting kan geven bij pijn door stress of migraine. U merkt het niet alleen in uw lichaam, maar ook in uw hoofd: het kalmeert, het ontspant en het kan zorgen voor een betere nachtrust.'],
+      voordelen: ['Verlicht stress', 'Verhoogt de energie', 'Geeft totale ontspanning', 'Verlichtend bij migraine en hoofdpijn', 'Verbetert de nachtrust', 'Te combineren met andere behandelingen'],
+      prijzen: [['Los, 30 minuten', '€ 38,00'], ['Met massage, 60 minuten', '€ 70,00'], ['Met massage, 75 minuten', '€ 85,00']]
+    },
+    cupping: {
+      titel: 'Cupping', prijs: '€ 55', duur: '45 min',
+      tekst: ['Cupping komt oorspronkelijk uit de Oosterse geneeskunde en wordt inmiddels wereldwijd gebruikt. Ik combineer speciale cups met massage, voor een diepe ontspanning die verder gaat dan een gewone massage.',
+              'Ik plaats de cups op uw huid, waarna een vacuüm de huid en het weefsel eronder zachtjes optilt. Door de cups langzaam over uw lichaam te bewegen komt de doorbloeding op gang, worden afvalstoffen afgevoerd en kan spanning die diep vastzit eindelijk loslaten.'],
+      voordelen: ['Stimuleert de bloedcirculatie', 'Vermindert spierspanning en helpt bij herstel', 'Voert afvalstoffen af', 'Geeft ontspanning en vermindert stress', 'Te combineren met hoofd- en gezichtsmassage']
+    },
+    pakking: {
+      titel: 'Pakking (infrarood)', prijs: 'Vanaf € 55', duur: 'Los of combi',
+      tekst: ['Bij een pakking ligt u heerlijk warm onder de infrarooddeken, met een (magnesium)pakking op uw huid. Magnesium helpt uw spieren te ontspannen, vermindert stress en kan zorgen voor een betere slaap.',
+              'De infrarooddeken verwarmt uw lichaam diep van binnenuit en opent de poriën, waardoor de magnesium nog beter wordt opgenomen. Of u nu wilt herstellen na het sporten of gewoon even wilt bijkomen na een drukke dag, u gaat met een soepel en rustig gevoel weer naar huis.'],
+      voordelen: ['Ontspant en maakt de spieren soepel', 'Ontgift het lichaam', 'Vermindert stress', 'Geeft energie', 'Zorgt voor een goede nachtrust', 'Vermindert pijn bij reuma en/of gewrichtspijn'],
+      prijzen: [['Pakking', '€ 55,00'], ['Magnesium pakking', '€ 60,00']]
+    }
+  };  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openBeh(kaart) {
+    const d = BEH[kaart.dataset.beh];
+    const img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popPrijs').textContent = d.prijs;
+    document.getElementById('popDuur').innerHTML = kaart.querySelector('.duur svg').outerHTML + ' ' + esc(d.duur);
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popVoordelen').innerHTML = d.voordelen.map(v => `<li>${esc(v)}</li>`).join('');
+    const pr = document.getElementById('popPrijzen');
+    pr.hidden = !d.prijzen;
+    pr.querySelector('div').innerHTML = (d.prijzen || []).map(([a, b]) => `<div class="rij"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-beh]').forEach(k => k.addEventListener('click', () => openBeh(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  // Reviews: swipen op mobiel, stipjes tonen de positie
+  const rij = document.getElementById('reviewsRij'), stip = document.getElementById('stipjes');
+  const revs = [...rij.children];
+  revs.forEach((r, i) => { const b = document.createElement('button'); b.tabIndex = -1; b.addEventListener('click', () => rij.scrollTo({left: r.offsetLeft - rij.offsetLeft - 20, behavior: 'smooth'})); stip.appendChild(b); });
+  function zetStip() {
+    const i = Math.round(rij.scrollLeft / (revs[0].offsetWidth + 14));
+    [...stip.children].forEach((b, j) => b.classList.toggle('aan', j === Math.min(i, revs.length - 1)));
+  }
+  rij.addEventListener('scroll', zetStip, {passive: true}); zetStip();
+
+  // Contactformulier: berichten gaan via FormSubmit naar dit adres
+  const MAIL = 'info@demassagepraktijk.nl';
+  const form = document.getElementById('contactForm'), fout = document.getElementById('formFout');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(form));
+    if (d._honey) return;
+    const toon = t => { fout.textContent = t; fout.classList.add('aan'); };
+    fout.classList.remove('aan');
+    if (!d.naam.trim()) return toon('Vul uw naam in.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email.trim())) return toon('Vul een geldig e-mailadres in.');
+    const knop = form.querySelector('button[type=submit]'), tekst = knop.innerHTML;
+    knop.disabled = true; knop.textContent = 'Bezig met versturen...';
+    try {
+      const r = await fetch('https://formsubmit.co/ajax/' + MAIL, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify({
+          _subject: 'Nieuw bericht via de website van ' + d.naam,
+          _replyto: d.email, _template: 'table', _captcha: 'false',
+          Naam: d.naam, Telefoon: d.telefoon || '-', 'E-mail': d.email,
+          Bericht: d.bericht || '-'
+        })
+      });
+      const res = await r.json();
+      if (!r.ok || String(res.success) !== 'true') throw new Error(res.message);
+      form.style.display = 'none';
+      document.getElementById('formKlaar').classList.add('aan');
+    } catch (err) {
+      toon('Het versturen is helaas niet gelukt. Bel of app gerust naar 06 54 73 63 50, of mail naar ' + MAIL + '.');
+    } finally {
+      knop.disabled = false; knop.innerHTML = tekst;
+    }
+  });
+</script>
 </body>
 </html>

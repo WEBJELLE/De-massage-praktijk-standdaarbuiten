@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pagina niet gevonden | Massagepraktijk Standdaarbuiten</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<script>
+  // Oude JouwWeb-adressen doorsturen naar de juiste plek op de nieuwe site
+  (function () {
+    var pad = location.pathname.toLowerCase().replace(/\/+$/, '');
+    var naar = [
+      [/^\/tarieven/, '/#tarieven'],
+      [/^\/contact/, '/#contact'],
+      [/^\/wie-ben-ik/, '/#over-mij'],
+      [/^\/magnesium-1/, '/#magnesium'],
+      [/^\/massages/, '/#behandelingen']
+    ];
+    for (var i = 0; i < naar.length; i++) {
+      if (naar[i][0].test(pad)) { location.replace(naar[i][1]); return; }
+    }
+  })();
+</script>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f1ed;color:#7a6b62;font:18px/1.6 'Quicksand',system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+  img{width:110px;height:110px;margin-bottom:18px}
+  h1{color:#98887d;font-weight:500;text-transform:uppercase;letter-spacing:.05em;font-size:26px;margin:0 0 8px}
+  a{display:inline-block;margin-top:22px;background:#98887d;color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px}
+</style>
+</head>
+<body>
+  <main>
+    <img src="/img/logo-rond.webp" alt="Massagepraktijk Standdaarbuiten">
+    <h1>Pagina niet gevonden</h1>
+    <p>Deze pagina bestaat niet (meer). Op de homepage vindt u alle behandelingen, prijzen en contactgegevens.</p>
+    <a href="/">Naar de homepage</a>
+  </main>
+</body>
+</html>
